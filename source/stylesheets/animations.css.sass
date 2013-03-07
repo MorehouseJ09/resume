@@ -1,0 +1,22 @@
+//animation
+@-webkit-keyframes rise
+  0%
+    top: 30em
+    -webkit-transform: scale(0)
+    opacity: 0
+  50%
+    top: 15em
+    -webkit-transform: scale(0)
+  82.5%
+    -webkit-transform: scale(1.05)
+    -webkit-animation-timing-function: ease-out
+    opacity: 1
+  100%
+    top: 2em
+    -webkit-transform: scale(1)
+      
+@mixin rise_animation
+  -webkit-animation: rise 2s
+  -moz-animation: rise 2s
+  -o-animation: rise 2s
+  animation: rise 2s

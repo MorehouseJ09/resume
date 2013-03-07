@@ -1,4 +1,17 @@
+@import mixins
+@import animations
+
 #header
 
 	position: relative
-	
+	top: 2em
+	padding: 2em
+	width: 80%
+	margin: 0 auto	
+	background-color: gray
+	@include rise_animation	
+
+	> h1 
+
+		text-align: center
+		@include base_font

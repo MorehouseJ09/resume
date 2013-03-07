@@ -20,3 +20,16 @@
   -moz-animation: rise 2s
   -o-animation: rise 2s
   animation: rise 2s
+
+
+@-webkit-keyframes fade_in  
+
+  0%
+    opacity: 0
+  50%
+    opacity: 0
+  100%
+    opacity: 1
+
+@mixin fade_in
+  -webkit-animation: fade_in 4s

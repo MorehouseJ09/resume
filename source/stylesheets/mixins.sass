@@ -1,21 +1,24 @@
 // @import url(http://fonts.googleapis.com/css?family=Fjalla+One)
+// @import url(http://fonts.googleapis.com/css?family=Julius+Sans+One)
+@import url(http://fonts.googleapis.com/css?family=Exo:400,900)
+
 
 @mixin base_font($size: 1em)
 	
-	font-family: 'Fjalla One', sans-serif
+	font-family: 'Exo' sans-serif
 	font-size: $size
 
 @mixin header
 	
 	> h1
+		position: relative
 		text-align: center
 		@include base_font(4em)
-		color: rgba(255,255,255, 0.6)
+		color: rgba(25,25,25, 1)
 		// x offset y offset blur / spread color
-		text-shadow: 0.1em 0.15em 0em rgba(36,36,36,0.8)
-
-
-
+		// text-shadow: 0.1em 0.15em 0em rgba(36,36,36,0.8)
+		text-shadow: 2px 2px 1px rgba(255,255,255,0.8)
+		letter-spacing: 0.2em
 
 @mixin background
 

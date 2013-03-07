@@ -4,13 +4,23 @@
   javascripts: all 
 ---
 
+#forkme
+	%a{:href=>"https://github.com/MorehouseJ09/resume"}
+
+		%img{:src=>"../images/logos/forkme.png"}
+
+
+
 / include the basic header
 = partial "partials/header"
 
 #container
 	
 	= partial "partials/overview"
-	
+	= partial "partials/projects"
+	= partial "partials/experience"
+	= partial "partials/skills"
+
 = partial "partials/footer"
 
 

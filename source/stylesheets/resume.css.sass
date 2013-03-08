@@ -6,6 +6,16 @@ body
 
 	background: url("../images/creampaper.png") 
 
+	a
+		// text-decoration: none
+		color: white
+		&:active
+
+			color: white
+		&:visited
+
+			color: white
+
 #forkme
 	
 	@include fade_in(6s)	
@@ -37,6 +47,7 @@ body
 	top: 2em
 	margin: 0 auto
 	padding: 1em
+	margin-bottom: 20em
 
 #overview
 
@@ -53,3 +64,18 @@ body
 #skills
 
 	@include base
+
+	> div:nth-of-type(2)
+
+		overflow-y: auto
+
+		> div
+
+			position: relative
+			float: left
+			width: 33%
+
+			> h2 
+
+				text-align: center
+				

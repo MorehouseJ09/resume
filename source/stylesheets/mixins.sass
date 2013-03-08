@@ -20,13 +20,22 @@
 		text-shadow: 2px 2px 1px rgba(255,255,255,0.8)
 		letter-spacing: 0.2em
 
+@mixin secondary_font
+
+	@include base_font(1.9em)
+	@include fade_in
+	letter-spacing: 0.1em
+	color: rgba(225, 225,225, 0.8)
+	text-shadow: 1.5px 1.5px 1px rgba(36,36,36,0.9)
+
+
 @mixin background
 
 	background: #d4d4d4 url("../images/debut_dark.png")
 	border: 0.1em solid rgba(255,255,255,0.8)
 	border-radius: 0.2em
 	// x offset y offset spread color
-	box-shadow: 0.2em 0.2em 0.5em rgba(36,36,36, 0.8)
+	box-shadow: 0.4em 0.4em 0.5em rgba(36,36,36, 0.8)
 
 
 @mixin base
@@ -35,8 +44,20 @@
 	position: relative
 	width: 80%
 	margin: 0 auto
-	// 
+	display: block
+
+	// include the background mixin
+	> div:nth-of-type(2n)
+
+		margin-top: 1em
+		@include background
+		padding: 1em
+		@include secondary_font
+		font-size: 1em
+
+	// first element is the header! 
 	> div:nth-of-type(1)
+
 
 		border-bottom: 0.15em solid rgba(0,0,0,0.8)
 		@include header

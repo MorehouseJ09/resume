@@ -4,5 +4,6 @@ Resume Web Application
 Overview
 -
 
-I'm fixing up my resume and figured i might as well make it a small web project. Working with Middleman, SASS and Coffeescript.
+This is a resume platform and launching point for my personal website. I'm building on Middleman and using Haml, Coffeescript and Sass.
 
+Working on implementing json loading of data for various templates etc.

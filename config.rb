@@ -30,6 +30,7 @@
 
 # Proxy (fake) files
 page "/", :proxy => "/resume.html" do
+  
 #   @which_fake_page = "Rendering a fake page with a variable"
 end
 
